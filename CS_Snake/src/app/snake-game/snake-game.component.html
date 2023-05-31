@@ -1,0 +1,12 @@
+<div class="snake-container">
+    <div class="stats-bar">
+        <div class="title-text">CS_Snake</div>
+    </div>
+    <div class="snake-grid-container-container">
+        <div class="snake-grid-container">
+            <div class="snake-grid">
+                <div *ngFor="let pixel of pixels" [ngClass]="{'snake-part snake-head': pixel.type === 'head'}"></div>
+            </div>
+        </div>
+    </div>
+</div>
